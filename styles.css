@@ -1,1 +1,21 @@
-/* Пиши стили тут */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    background-image: url('img/star-empty.png');
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rating input:hover ~ label {
+    background-image: url("img/star.png");
+}
